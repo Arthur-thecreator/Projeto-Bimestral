@@ -1,8 +1,20 @@
-#infoUser{
+body{    
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px; 
+}
+
+#infoUser {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 48%; 
+    box-sizing: border-box; 
 }
+
+
 #sintomaObs{
     display: flex;
     flex-direction: column;
@@ -22,14 +34,20 @@
     display: flex;
     flex-direction: column;
 }
-#areaMapa{
-    display: flexbox;
-    flex-direction: row;
-    width: 50%;
-}
-#imagem{
+#areaMapa {
     display: flex;
-    flex-direction: row;
-    width: 100%;
-
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 48%; 
+    
+    
+    box-sizing: border-box; 
+    
 }
+#imagem {
+    max-width: 100%; /* Garante que a imagem seja responsiva e caiba dentro da areaMapa */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    
+}
+
