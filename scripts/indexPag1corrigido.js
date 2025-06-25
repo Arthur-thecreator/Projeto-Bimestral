@@ -1,6 +1,7 @@
 const body = document.querySelector("body");
 
 const infoUser = document.createElement("div");
+infoUser.id = "infoUser"
 
 // Seção de sintomas e observações
 const sintoma_obs = document.createElement("section");
@@ -25,6 +26,7 @@ legendaCaixaObs.innerText = "Colocar observações";
 
 // Seção de endereço
 const areaEndereco = document.createElement("section");
+areaEndereco.id = "areaEndereco"
 
 // Label e inputs separados para cada campo de endereço
 const legendaEndereco = document.createElement("label");
@@ -52,6 +54,10 @@ const diagButton = document.createElement("button");
 diagButton.innerText = "Gerar Diagnóstico";
 
 // Montando a hierarquia
+body.append(infoUser);
+
+infoUser.append(sintoma_obs, areaEndereco, mapa, diagButton);
+
 selectSintomas.append(); 
 sintoma_obs.append(legendaSelectSintomas, selectSintomas,legendaCaixaObs, caixaObs);
 
@@ -64,5 +70,4 @@ areaEndereco.append(
   botaoLocalizacao
 );
 
-infoUser.append(sintoma_obs, areaEndereco, mapa, diagButton);
-body.append(infoUser);
+

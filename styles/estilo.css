@@ -1,0 +1,15 @@
+#infoUser{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+#sintomaObs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#areaendereco{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
