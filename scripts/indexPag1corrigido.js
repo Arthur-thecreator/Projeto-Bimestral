@@ -64,6 +64,7 @@ areaMapa.id = "areaMapa"
 
 const imagem = document.createElement("img");
 imagem.src ="../images/imagem-mapa.jpg"
+imagem.id = "imagem"
 
 // Montando a hierarquia
 body.append(infoUser, areaMapa);

@@ -22,3 +22,14 @@
     display: flex;
     flex-direction: column;
 }
+#areaMapa{
+    display: flexbox;
+    flex-direction: row;
+    width: 50%;
+}
+#imagem{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
