@@ -34,29 +34,38 @@ legendaEndereco.innerText = "Endereço:";
 
 const rua = document.createElement("textarea");
 rua.placeholder = "Rua";
+rua.className = "partesEndereco"
 
 const num = document.createElement("textarea");
 num.placeholder = "Número";
+num.className = "partesEndereco"
 
 const bairro = document.createElement("textarea");
 bairro.placeholder = "Bairro";
+bairro.className = "partesEndereco"
 
 const cidade = document.createElement("textarea");
 cidade.placeholder = "Cidade";
+cidade.className = "partesEndereco"
 
 const botaoLocalizacao = document.createElement("button");
 botaoLocalizacao.innerText = "Usar Localização";
-
-// Seção de mapa e botão de diagnóstico
-const mapa = document.createElement("section");
+botaoLocalizacao.className = "partesEndereco"
 
 const diagButton = document.createElement("button");
 diagButton.innerText = "Gerar Diagnóstico";
+diagButton.className = "partesEndereco"
+
+// Seção de mapa
+const areaMapa = document.createElement("section");
+areaMapa.id = ""
+
+
 
 // Montando a hierarquia
 body.append(infoUser);
 
-infoUser.append(sintoma_obs, areaEndereco, mapa, diagButton);
+infoUser.append(sintoma_obs, areaEndereco, diagButton);
 
 selectSintomas.append(); 
 sintoma_obs.append(legendaSelectSintomas, selectSintomas,legendaCaixaObs, caixaObs);
