@@ -1,5 +1,7 @@
 const body = document.querySelector("body");
 
+const dicPrincipal = document.createElement("div")
+
 const infoUser = document.createElement("div");
 infoUser.id = "infoUser"
 
@@ -57,18 +59,21 @@ diagButton.innerText = "Gerar Diagnóstico";
 diagButton.className = "partesEndereco"
 
 // Seção de mapa
-const areaMapa = document.createElement("section");
-areaMapa.id = ""
+const areaMapa = document.createElement("div");
+areaMapa.id = "areaMapa"
 
-
+const imagem = document.createElement("img");
+imagem.src ="../images/imagem-mapa.jpg"
 
 // Montando a hierarquia
-body.append(infoUser);
+body.append(infoUser, areaMapa);
 
 infoUser.append(sintoma_obs, areaEndereco, diagButton);
 
 selectSintomas.append(); 
 sintoma_obs.append(legendaSelectSintomas, selectSintomas,legendaCaixaObs, caixaObs);
+
+areaMapa.append(imagem);
 
 areaEndereco.append(
   legendaEndereco,
