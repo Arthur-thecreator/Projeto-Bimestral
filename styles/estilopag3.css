@@ -1,74 +1,149 @@
+/* Estilos Gerais do Corpo da Página */
 body {
-    display: flex; /* Transforma o body em um contêiner flexível */
-    flex-direction: row; /* Alinha os itens em linha (esquerda para direita) */
-    justify-content: space-between; /* Empurra os itens para as extremidades, criando espaço entre eles */
-    align-items: flex-start; /* Alinha os itens pelo topo */
-    gap: 20px; /* Adiciona um espaço entre os dois blocos principais */
-    padding: 20px; /* Adiciona um preenchimento geral para não colar nas bordas */
-    background-color: rgb(174, 248, 248);
+    display: flex; /* Habilita o Flexbox para o layout principal */
+    flex-direction: row; /* Itens em linha (lado a lado) */
+    justify-content: center; /* Centraliza os blocos principais na horizontal */
+    align-items: flex-start; /* Alinha os blocos pelo topo */
+    gap: 30px; /* Espaço entre os dois blocos principais */
+    padding: 40px; /* Aumenta o preenchimento geral em torno do conteúdo */
+    background-color: #f0f7f9; /* Um azul bem claro e suave para o fundo */
+    font-family: 'Inter', sans-serif; /* Fonte moderna e legível (adicione no HTML: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">) */
+    color: #333; /* Cor de texto padrão */
+    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    margin: 0; /* Remove margens padrão do body */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
 }
 
-/* Contêiner para todas as informações do paciente (lado esquerdo) */
+/* Contêiner de Informações do Paciente (Lado Esquerdo) */
 #areaInfoPaciente {
     display: flex;
     flex-direction: column;
-    width: 48%; /* Ocupa aproximadamente metade da tela, deixando espaço para o gap */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
-    background-color: rgb(240, 255, 255); /* Fundo mais claro para a área de informações */
-    padding: 15px; /* Adiciona um preenchimento interno */
-    border-radius: 8px; /* Cantos levemente arredondados */
+    width: 50%; /* Ocupa metade da largura disponível */
+    background-color: #ffffff; /* Fundo branco para o card */
+    padding: 30px; /* Preenchimento interno */
+    border-radius: 16px; /* Cantos mais arredondados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada e suave */
+    box-sizing: border-box;
 }
 
 /* Estilos para os campos de entrada de dados do paciente */
 .dadosPaciente {
-    display: flex; /* Mantém flex para organização interna se precisar */
-    flex-direction: column;
-    width: 100%; /* Garante que os inputs preencham a largura de #areaInfoPaciente */
+    width: 100%;
+    padding: 12px 15px; /* Preenchimento interno */
     margin-top: 10px; /* Margem superior */
-    margin-bottom: 10px; /* Margem inferior */
-    background-color: rgb(255, 255, 255);
-    padding: 10px; /* Preenchimento interno dos campos */
-    border: 1px solid #ccc; /* Borda sutil */
-    border-radius: 4px; /* Cantos arredondados para os inputs */
-    box-sizing: border-box; /* Inclui padding e border na largura */
+    margin-bottom: 15px; /* Espaço abaixo de cada campo */
+    border: 1px solid #d0e0e3; /* Borda suave */
+    border-radius: 8px; /* Cantos arredondados */
+    font-size: 1em; /* Tamanho da fonte padrão */
+    line-height: 1.4; /* Espaçamento entre linhas */
+    resize: vertical; /* Permite redimensionar verticalmente apenas */
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
 }
 
-/* Contêiner para a imagem (lado direito) */
-#areaImagem {
-    display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente dentro da areaImagem */
-    align-items: flex-start; /* Alinha a imagem ao topo verticalmente */
-    width: 48%; /* Ocupa aproximadamente metade da tela */
-    background-color: rgb(215, 250, 250);
-    /* Removi margin-top e margin-bottom aqui para usar o padding do body */
-    box-sizing: border-box;
-    border-radius: 8px; /* Cantos arredondados */
-    padding: 15px; /* Adiciona um preenchimento interno para a imagem não colar nas bordas */
+.dadosPaciente:focus {
+    border-color: #007bff; /* Borda azul ao focar */
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Sombra suave ao focar */
+    outline: none; /* Remove o contorno padrão do navegador */
 }
 
 /* Estilos para os rótulos (labels) */
 .legendas {
-    margin-top: 15px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #333;
+    font-weight: 600; /* Texto do label mais forte */
+    margin-top: 20px; /* Espaço acima do label */
+    margin-bottom: 8px; /* Espaço abaixo do label */
+    color: #4a4a4a; /* Cor mais escura para labels */
+    font-size: 1.05em; /* Aumenta um pouco o tamanho da fonte */
+    display: block; /* Garante que o label ocupe sua própria linha */
 }
 
 /* Estilo para o elemento select */
 #verRecomendacoes {
     width: 100%;
-    padding: 10px;
+    padding: 12px 15px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin-bottom: 20px; /* Mais espaço após o select */
+    border: 1px solid #d0e0e3;
+    border-radius: 8px;
     background-color: white;
+    box-sizing: border-box;
+    font-size: 1em;
+    appearance: none; /* Remove a seta padrão do select em alguns navegadores */
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-6.4H18.6c-5%200-9.3%201.8-13.2%205.4l136%20136%20136-136.4c4-3.6%205.8-7.9%205.8-12.8z%22%2F%3E%3C%2Fsvg%3E'); /* Seta customizada */
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+#verRecomendacoes:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    outline: none;
+}
+
+/* Contêiner para a imagem (Lado Direito) */
+#areaImagem {
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+    width: 45%; /* Ocupa um pouco menos da metade para melhor visual */
+    background-color: #e6f2ff; /* Um azul mais claro e suave para o fundo do mapa */
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Garante que a imagem não vaze */
+    min-height: 500px; /* Altura mínima para a área da imagem */
     box-sizing: border-box;
 }
 
-/* Estilo para a imagem, garantindo responsividade */
-#imagem { /* Assumindo que você terá uma tag <img> com id="imagem" dentro de #areaImagem */
-    max-width: 100%; /* Garante que a imagem se ajuste à largura do seu contêiner */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove espaços extras abaixo da imagem */
+/* Estilo da Imagem (homem-doente.jpg) */
+#imagem {
+    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: auto; /* Mantém a proporção */
+    display: block; /* Remove espaços extras */
+    border-radius: 12px; /* Borda arredondada para a imagem dentro da div */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+}
+
+/* Responsividade Básica */
+@media (max-width: 992px) {
+    body {
+        flex-direction: column; /* Em telas menores, os blocos ficam um abaixo do outro */
+        align-items: center; /* Centraliza tudo */
+        padding: 30px;
+        gap: 25px;
+    }
+
+    #areaInfoPaciente,
+    #areaImagem {
+        width: 100%; /* Ocupam a largura total em telas pequenas */
+        margin-bottom: 0; /* Remove margem extra */
+    }
+
+    #areaImagem {
+        min-height: 350px; /* Ajusta a altura mínima para telas menores */
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        padding: 20px;
+    }
+
+    #areaInfoPaciente {
+        padding: 20px;
+    }
+
+    .dadosPaciente,
+    #verRecomendacoes {
+        padding: 10px 12px;
+        font-size: 0.95em;
+    }
+
+    .legendas {
+        font-size: 1em;
+        margin-top: 15px;
+    }
+    #areaImagem {
+        min-height: 250px;
+    }
 }
