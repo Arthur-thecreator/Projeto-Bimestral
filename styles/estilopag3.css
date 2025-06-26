@@ -1,36 +1,74 @@
-body{    
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    background-color: rgb(174, 248, 248); 
+body {
+    display: flex; /* Transforma o body em um contêiner flexível */
+    flex-direction: row; /* Alinha os itens em linha (esquerda para direita) */
+    justify-content: space-between; /* Empurra os itens para as extremidades, criando espaço entre eles */
+    align-items: flex-start; /* Alinha os itens pelo topo */
+    gap: 20px; /* Adiciona um espaço entre os dois blocos principais */
+    padding: 20px; /* Adiciona um preenchimento geral para não colar nas bordas */
+    background-color: rgb(174, 248, 248);
 }
 
-.dadosPaciente{
+/* Contêiner para todas as informações do paciente (lado esquerdo) */
+#areaInfoPaciente {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 48%; /* Ocupa aproximadamente metade da tela, deixando espaço para o gap */
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+    background-color: rgb(240, 255, 255); /* Fundo mais claro para a área de informações */
+    padding: 15px; /* Adiciona um preenchimento interno */
+    border-radius: 8px; /* Cantos levemente arredondados */
+}
+
+/* Estilos para os campos de entrada de dados do paciente */
+.dadosPaciente {
+    display: flex; /* Mantém flex para organização interna se precisar */
+    flex-direction: column;
+    width: 100%; /* Garante que os inputs preencham a largura de #areaInfoPaciente */
+    margin-top: 10px; /* Margem superior */
+    margin-bottom: 10px; /* Margem inferior */
     background-color: rgb(255, 255, 255);
+    padding: 10px; /* Preenchimento interno dos campos */
+    border: 1px solid #ccc; /* Borda sutil */
+    border-radius: 4px; /* Cantos arredondados para os inputs */
+    box-sizing: border-box; /* Inclui padding e border na largura */
 }
 
-
-#areaImagem{
+/* Contêiner para a imagem (lado direito) */
+#areaImagem {
     display: flex;
-    justify-content: center; 
-    align-items: flex-start; 
-    width: 48%; 
+    justify-content: center; /* Centraliza a imagem horizontalmente dentro da areaImagem */
+    align-items: flex-start; /* Alinha a imagem ao topo verticalmente */
+    width: 48%; /* Ocupa aproximadamente metade da tela */
     background-color: rgb(215, 250, 250);
-    margin-top: 20px;
-    margin-bottom: 20px;    
-    box-sizing: border-box;     
+    /* Removi margin-top e margin-bottom aqui para usar o padding do body */
+    box-sizing: border-box;
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 15px; /* Adiciona um preenchimento interno para a imagem não colar nas bordas */
 }
-#areaInfoPaciente{
-    display: flex;
-    flex-direction: column;
-    width: 48%; 
-    box-sizing: border-box; 
+
+/* Estilos para os rótulos (labels) */
+.legendas {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para o elemento select */
+#verRecomendacoes {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* Estilo para a imagem, garantindo responsividade */
+#imagem { /* Assumindo que você terá uma tag <img> com id="imagem" dentro de #areaImagem */
+    max-width: 100%; /* Garante que a imagem se ajuste à largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
 }
