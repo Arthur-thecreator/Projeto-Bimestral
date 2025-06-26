@@ -1,0 +1,57 @@
+body {
+    display: flex; /* Transforma o body em um contêiner flexível */
+    flex-direction: column; /* Organiza os itens em coluna (um abaixo do outro) */
+    align-items: center; /* Centraliza os itens horizontalmente (no eixo transversal) */
+    justify-content: flex-start; /* Alinha os itens ao topo do contêiner */
+    padding: 20px; /* Adiciona um preenchimento em volta da página */
+    font-family: Arial, sans-serif; /* Define uma fonte para a página */
+    background-color: #f0f8ff; /* Um fundo suave para o body */
+    min-height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    margin: 0; /* Remove margem padrão do body */
+}
+
+h1 {
+    text-align: center; /* Centraliza o texto do h1 */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #333;
+}
+
+#areaLogo {
+    display: flex; /* Torna a areaLogo um contêiner flexível */
+    flex-direction: column; /* Organiza a imagem e outros elementos em coluna se tiver mais */
+    align-items: center; /* Centraliza a imagem horizontalmente dentro da areaLogo */
+    margin-bottom: 30px; /* Espaço entre a área da imagem/título e os botões */
+}
+
+#imagem {
+    max-width: 300px; /* Define uma largura máxima para a imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    border-radius: 8px; /* Cantos levemente arredondados para a imagem */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para a imagem */
+}
+
+#areaBotoes {
+    display: flex; /* Transforma a areaBotoes em um contêiner flexível */
+    flex-wrap: wrap; /* Permite que os botões quebrem a linha se não couberem */
+    justify-content: center; /* Centraliza os botões horizontalmente */
+    gap: 15px; /* Espaço entre os botões */
+    width: 100%; /* Garante que a área de botões ocupe a largura total disponível */
+    max-width: 600px; /* Limita a largura máxima da área de botões para melhor centralização */
+}
+
+.buttons {
+    padding: 15px 25px; /* Preenchimento interno dos botões */
+    font-size: 16px; /* Tamanho da fonte dos botões */
+    cursor: pointer; /* Muda o cursor ao passar por cima */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    background-color: #007bff; /* Cor de fundo padrão dos botões */
+    color: white; /* Cor do texto dos botões */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+    min-width: 200px; /* Largura mínima para os botões */
+}
+
+.buttons:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
