@@ -1,74 +1,74 @@
-/* Estilos Gerais do Corpo da Página */
+
 body {
-    display: flex; /* Habilita o Flexbox para o layout principal */
-    flex-direction: row; /* Itens em linha (lado a lado) */
-    justify-content: center; /* Centraliza os blocos principais na horizontal */
-    align-items: flex-start; /* Alinha os blocos pelo topo */
-    gap: 30px; /* Espaço entre os dois blocos principais */
-    padding: 40px; /* Aumenta o preenchimento geral em torno do conteúdo */
-    background-color: #f0f7f9; /* Um azul bem claro e suave para o fundo */
-    font-family: 'Inter', sans-serif; /* Fonte moderna e legível (adicione no HTML: <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">) */
-    color: #333; /* Cor de texto padrão */
-    min-height: 100vh; /* Garante que o body ocupe toda a altura da tela */
-    margin: 0; /* Remove margens padrão do body */
-    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura */
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 30px; 
+    padding: 40px; 
+    background-color: #f0f7f9; 
+    font-family: 'Inter', sans-serif; 
+    color: #333; 
+    min-height: 100vh; 
+    margin: 0; 
+    box-sizing: border-box; 
 }
 
-/* Contêiner de Informações do Paciente (Lado Esquerdo) */
+
 #areaInfoPaciente {
     display: flex;
     flex-direction: column;
-    width: 50%; /* Ocupa metade da largura disponível */
-    background-color: #ffffff; /* Fundo branco para o card */
-    padding: 30px; /* Preenchimento interno */
-    border-radius: 16px; /* Cantos mais arredondados */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada e suave */
+    width: 50%; 
+    background-color: #ffffff; 
+    padding: 30px; 
+    border-radius: 16px; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
     box-sizing: border-box;
 }
 
-/* Estilos para os campos de entrada de dados do paciente */
+
 .dadosPaciente {
     width: 100%;
-    padding: 12px 15px; /* Preenchimento interno */
-    margin-top: 10px; /* Margem superior */
-    margin-bottom: 15px; /* Espaço abaixo de cada campo */
-    border: 1px solid #d0e0e3; /* Borda suave */
-    border-radius: 8px; /* Cantos arredondados */
-    font-size: 1em; /* Tamanho da fonte padrão */
-    line-height: 1.4; /* Espaçamento entre linhas */
-    resize: vertical; /* Permite redimensionar verticalmente apenas */
+    padding: 12px 15px; 
+    margin-top: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #d0e0e3; 
+    border-radius: 8px; 
+    font-size: 1em; 
+    line-height: 1.4; 
+    resize: vertical; 
     box-sizing: border-box;
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .dadosPaciente:focus {
-    border-color: #007bff; /* Borda azul ao focar */
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Sombra suave ao focar */
-    outline: none; /* Remove o contorno padrão do navegador */
+    border-color: #007bff; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+    outline: none; 
 }
 
-/* Estilos para os rótulos (labels) */
+
 .legendas {
-    font-weight: 600; /* Texto do label mais forte */
-    margin-top: 20px; /* Espaço acima do label */
-    margin-bottom: 8px; /* Espaço abaixo do label */
-    color: #4a4a4a; /* Cor mais escura para labels */
-    font-size: 1.05em; /* Aumenta um pouco o tamanho da fonte */
-    display: block; /* Garante que o label ocupe sua própria linha */
+    font-weight: 600; 
+    margin-top: 20px; 
+    margin-bottom: 8px; 
+    color: #4a4a4a; 
+    font-size: 1.05em; 
+    display: block; 
 }
 
-/* Estilo para o elemento select */
+
 #verRecomendacoes {
     width: 100%;
     padding: 12px 15px;
     margin-top: 10px;
-    margin-bottom: 20px; /* Mais espaço após o select */
+    margin-bottom: 20px; 
     border: 1px solid #d0e0e3;
     border-radius: 8px;
     background-color: white;
     box-sizing: border-box;
     font-size: 1em;
-    appearance: none; /* Remove a seta padrão do select em alguns navegadores */
+    appearance: none;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007bff%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13.2-6.4H18.6c-5%200-9.3%201.8-13.2%205.4l136%20136%20136-136.4c4-3.6%205.8-7.9%205.8-12.8z%22%2F%3E%3C%2Fsvg%3E'); /* Seta customizada */
     background-repeat: no-repeat;
     background-position: right 15px center;
@@ -81,46 +81,46 @@ body {
     outline: none;
 }
 
-/* Contêiner para a imagem (Lado Direito) */
+
 #areaImagem {
     display: flex;
-    justify-content: center; /* Centraliza a imagem horizontalmente */
-    align-items: center; /* Centraliza a imagem verticalmente */
-    width: 45%; /* Ocupa um pouco menos da metade para melhor visual */
-    background-color: #e6f2ff; /* Um azul mais claro e suave para o fundo do mapa */
+    justify-content: center; 
+    align-items: center; 
+    width: 45%; 
+    background-color: #e6f2ff; 
     border-radius: 16px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    overflow: hidden; /* Garante que a imagem não vaze */
-    min-height: 500px; /* Altura mínima para a área da imagem */
+    overflow: hidden; 
+    min-height: 500px; 
     box-sizing: border-box;
 }
 
-/* Estilo da Imagem (homem-doente.jpg) */
+
 #imagem {
-    max-width: 100%; /* Garante que a imagem se ajuste ao contêiner */
-    height: auto; /* Mantém a proporção */
-    display: block; /* Remove espaços extras */
-    border-radius: 12px; /* Borda arredondada para a imagem dentro da div */
-    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    border-radius: 12px; 
+    object-fit: cover;
 }
 
-/* Responsividade Básica */
+
 @media (max-width: 992px) {
     body {
-        flex-direction: column; /* Em telas menores, os blocos ficam um abaixo do outro */
-        align-items: center; /* Centraliza tudo */
+        flex-direction: column; 
+        align-items: center; 
         padding: 30px;
         gap: 25px;
     }
 
     #areaInfoPaciente,
     #areaImagem {
-        width: 100%; /* Ocupam a largura total em telas pequenas */
-        margin-bottom: 0; /* Remove margem extra */
+        width: 100%; 
+        margin-bottom: 0; 
     }
 
     #areaImagem {
-        min-height: 350px; /* Ajusta a altura mínima para telas menores */
+        min-height: 350px; 
     }
 }
 

@@ -1,118 +1,117 @@
-/* Estilos Gerais do Corpo da Página */
+
 body {
-    display: flex; /* Habilita o Flexbox para o layout principal */
-    flex-direction: column; /* Organiza os elementos em coluna (um abaixo do outro) */
-    align-items: center; /* Centraliza os itens horizontalmente na página */
-    justify-content: center; /* Centraliza o conteúdo verticalmente */
-    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
-    margin: 0; /* Remove margens padrão do navegador */
-    padding: 30px; /* Adiciona um preenchimento em volta do conteúdo */
-    background: linear-gradient(135deg, #e0f2f7 0%, #c1e4ee 100%); /* Gradiente suave de azul claro */
-    font-family: 'Poppins', sans-serif; /* Fonte moderna e legível (adicionar no HTML: <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">) */
-    color: #333; /* Cor de texto padrão */
-    text-align: center; /* Centraliza o texto em elementos como h1 */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 30px; 
+    background: linear-gradient(135deg, #e0f2f7 0%, #c1e4ee 100%); 
+    font-family: 'Poppins', sans-serif; 
+    color: #333; 
+    text-align: center; 
 }
 
-/* Estilo do Título Principal */
+
 h1 {
-    font-size: 2.8em; /* Tamanho maior para o título */
-    font-weight: 700; /* Negrito mais impactante */
-    color: #1a4a72; /* Azul escuro para o título */
-    margin-bottom: 40px; /* Aumenta o espaço abaixo do título */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); /* Sombra suave no texto */
+    font-size: 2.8em; 
+    font-weight: 700; 
+    color: #1a4a72; 
+    margin-bottom: 40px; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05); 
 }
 
-/* Contêiner da Logo */
+
 #areaLogo {
-    margin-bottom: 50px; /* Mais espaço entre a logo e os botões */
-    /* Usaremos box-shadow na imagem diretamente para um efeito melhor */
+    margin-bottom: 50px; 
 }
 
-/* Estilo da Imagem (Logo) */
+
 #imagem {
-    max-width: 350px; /* Aumenta um pouco o tamanho máximo da imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 50%; /* Transforma a imagem em um círculo (se for quadrada) */
-    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Sombra mais proeminente e suave */
-    border: 5px solid #fff; /* Borda branca ao redor da logo para destacá-la */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição para efeitos ao passar o mouse */
+    max-width: 350px;
+    height: auto;
+    border-radius: 50%; 
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); 
+    border: 5px solid #fff; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 #imagem:hover {
-    transform: scale(1.05); /* Aumenta um pouco ao passar o mouse */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Sombra mais intensa no hover */
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
 }
 
-/* Contêiner dos Botões */
+
 #areaBotoes {
     display: flex;
-    flex-wrap: wrap; /* Permite que os botões quebrem a linha */
-    justify-content: center; /* Centraliza os botões horizontalmente */
-    gap: 25px; /* Aumenta o espaço entre os botões */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 25px; 
     width: 100%;
-    max-width: 800px; /* Limita a largura máxima para manter os botões agrupados */
+    max-width: 800px; 
 }
 
-/* Estilo dos Botões */
+
 .buttons {
-    padding: 18px 35px; /* Mais preenchimento para botões maiores e mais clicáveis */
-    font-size: 1.2em; /* Texto maior nos botões */
-    font-weight: 600; /* Texto seminegrito */
+    padding: 18px 35px; 
+    font-size: 1.2em; 
+    font-weight: 600; 
     cursor: pointer;
     border: none;
-    border-radius: 10px; /* Cantos mais arredondados */
-    background-color: #007bff; /* Azul vibrante */
+    border-radius: 10px; 
+    background-color: #007bff; 
     color: white;
-    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); /* Sombra para o botão */
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transições suaves */
-    min-width: 250px; /* Largura mínima para os botões */
-    text-transform: uppercase; /* Texto em maiúsculas */
-    letter-spacing: 0.5px; /* Pequeno espaçamento entre letras */
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3); 
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; 
+    min-width: 250px; 
+    text-transform: uppercase; 
+    letter-spacing: 0.5px; 
 }
 
 .buttons:hover {
-    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
-    transform: translateY(-5px); /* Efeito de "levante" mais pronunciado */
-    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4); /* Sombra mais intensa no hover */
+    background-color: #0056b3; 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.4); 
 }
 
 .buttons:active {
-    background-color: #004085; /* Azul ainda mais escuro ao clicar */
-    transform: translateY(0); /* Retorna à posição original */
-    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.2); /* Sombra reduzida ao clicar */
+    background-color: #004085; 
+    transform: translateY(0); 
+    box-shadow: 0 3px 6px rgba(0, 123, 255, 0.2); 
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     h1 {
-        font-size: 2em; /* Ajusta o tamanho do título em telas menores */
+        font-size: 2em; 
         margin-bottom: 30px;
     }
 
     #imagem {
-        max-width: 250px; /* Reduz o tamanho da imagem em telas menores */
+        max-width: 250px; 
         margin-bottom: 40px;
     }
 
     .buttons {
-        font-size: 1em; /* Ajusta o tamanho da fonte dos botões */
+        font-size: 1em; 
         padding: 15px 25px;
-        min-width: unset; /* Remove a largura mínima para permitir flexibilidade */
-        width: 100%; /* Botões ocupam a largura total em telas pequenas */
-        max-width: 350px; /* Limita a largura para botões não ficarem muito grandes */
+        min-width: unset; 
+        width: 100%; 
+        max-width: 350px; 
     }
 
     #areaBotoes {
-        gap: 15px; /* Reduz o espaçamento entre os botões */
-        max-width: 100%; /* Permite que a área de botões ocupe toda a largura */
+        gap: 15px; 
+        max-width: 100%; 
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 1.5em; /* Título ainda menor para celulares */
+        font-size: 1.5em; 
     }
     #imagem {
-        max-width: 200px; /* Imagem menor para celulares */
+        max-width: 200px; 
     }
 }

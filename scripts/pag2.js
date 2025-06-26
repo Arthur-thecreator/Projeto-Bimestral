@@ -1,5 +1,5 @@
 const body = document.querySelector("body");
-const h1 = document.createElement("h1"); // Cria o h1 dinamicamente se não existir no HTML
+const h1 = document.createElement("h1"); 
 
 h1.innerText = "Nos informe o que você deseja.";
 
@@ -26,11 +26,11 @@ doencaButton.innerText = "Informar Sintomas";
 doencaButton.className = "buttons";
 
 const imagem = document.createElement("img");
-imagem.src = "../images/Logo-saude.jpg"; // Certifique-se de que o caminho está correto!
-imagem.alt = "Logo da Saúde"; // Adicionado texto alternativo para acessibilidade
+imagem.src = "../images/Logo-saude.jpg"; 
+imagem.alt = "Logo da Saúde"; 
 imagem.id = "imagem";
 
-// Anexando os elementos na ordem correta
+
 body.append(h1, areaLogo, areaBotoes);
 
 areaLogo.append(imagem);
