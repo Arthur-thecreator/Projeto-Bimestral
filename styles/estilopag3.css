@@ -1,0 +1,36 @@
+body{    
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(174, 248, 248); 
+}
+
+.dadosPaciente{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+
+#areaImagem{
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    width: 48%; 
+    background-color: rgb(215, 250, 250);
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    box-sizing: border-box;     
+}
+#areaInfoPaciente{
+    display: flex;
+    flex-direction: column;
+    width: 48%; 
+    box-sizing: border-box; 
+}
