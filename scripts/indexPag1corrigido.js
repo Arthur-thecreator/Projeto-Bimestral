@@ -83,7 +83,7 @@ const areaMapa = document.createElement("div");
 areaMapa.id = "areaMapa"
 
 const imagem = document.createElement("img");
-imagem.src ="../images/imagem-mapa.jpg" 
+imagem.src ="./images/imagem-mapa.jpg" 
 imagem.alt = "Imagem de um mapa mostrando localização"; 
 imagem.id = "imagem"
 
