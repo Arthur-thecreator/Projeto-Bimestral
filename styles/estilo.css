@@ -4,7 +4,8 @@ body{
     justify-content: space-between; 
     align-items: flex-start;
     gap: 20px;
-    padding: 20px; 
+    padding: 20px;
+    background-color: rgb(174, 248, 248); 
 }
 
 #infoUser {
@@ -21,11 +22,13 @@ body{
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: rgb(255, 255, 255);
 }
 #areaEndereco{
     display: flex;
     flex-direction: column;
     width: 100%;
+    background-color: rgb(255, 255, 255);
     
 }
 .partesEndereco{
@@ -39,15 +42,17 @@ body{
     justify-content: center; 
     align-items: flex-start; 
     width: 48%; 
+    background-color: rgb(215, 250, 250);
+    margin-top: 20px;
+    margin-bottom: 20px;
     
     
     box-sizing: border-box; 
     
 }
 #imagem {
-    max-width: 100%; /* Garante que a imagem seja responsiva e caiba dentro da areaMapa */
-    height: auto; /* Mantém a proporção da imagem */
-    display: block; /* Remove o espaço extra abaixo da imagem */
-    
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
