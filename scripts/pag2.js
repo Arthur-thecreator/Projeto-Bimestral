@@ -9,30 +9,40 @@ areaLogo.id = "areaLogo";
 const areaBotoes = document.createElement("div");
 areaBotoes.id = "areaBotoes";
 
-const examesButton = document.createElement("button");
-examesButton.innerText = "Acompanhar Exames";
-examesButton.className = "buttons";
-
-const falarMedicoButton = document.createElement("button");
-falarMedicoButton.innerText = "Falar diretamente com um médico";
-falarMedicoButton.className = "buttons";
-
-const consultasButton = document.createElement("button");
-consultasButton.innerText = "Ver Consultas";
-consultasButton.className = "buttons";
-
-const doencaButton = document.createElement("button");
-doencaButton.innerText = "Informar Sintomas";
-doencaButton.className = "buttons";
-
 const imagem = document.createElement("img");
 imagem.src = "../images/Logo-saude.jpg"; 
 imagem.alt = "Logo da Saúde"; 
 imagem.id = "imagem";
 
+let button1 = ["Acompanhar exames", "Falar diretamente com um médico"];
+let button2 = ["Ver consultas", "Informar sintomas"];
+
+
+function listaDinamica(ListaComandos) {
+    const containerDiv = document.createElement("div"); 
+    containerDiv.style.display = 'flex'; 
+    containerDiv.style.gap = '25px'; 
+    containerDiv.style.flexWrap = 'wrap'; 
+    containerDiv.style.justifyContent = 'center'; 
+
+    for (let i = 0; i < ListaComandos.length; i++) {
+        let botao = document.createElement("button");
+        botao.innerText = ListaComandos[i];
+        botao.className = "buttons"; 
+        containerDiv.appendChild(botao);
+    }
+    return containerDiv; 
+}
+
+
+const linha1 = listaDinamica(button1);
+areaBotoes.appendChild(linha1);
+
+const linha2 = listaDinamica(button2);
+areaBotoes.appendChild(linha2);
+
 
 body.append(h1, areaLogo, areaBotoes);
 
-areaLogo.append(imagem);
 
-areaBotoes.append(examesButton, falarMedicoButton, consultasButton, doencaButton);
+areaLogo.append(imagem);
