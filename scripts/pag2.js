@@ -43,5 +43,9 @@ areaBotoes.appendChild(linha2);
 
 body.append(h1, areaLogo, areaBotoes);
 
+const botoes = body.querySelectorAll("div button");
+botoes[2].addEventListener("click", () => {
+    window.location.href = "../index.html";
+});
 
 areaLogo.append(imagem);
