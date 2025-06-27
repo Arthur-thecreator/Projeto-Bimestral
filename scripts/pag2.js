@@ -14,8 +14,8 @@ imagem.src = "../images/Logo-saude.jpg";
 imagem.alt = "Logo da Saúde"; 
 imagem.id = "imagem";
 
-let button1 = ["Acompanhar exames", "Falar diretamente com um médico"];
-let button2 = ["Ver consultas", "Informar sintomas"];
+let button1 = ["Acompanhar exames"];
+let button2 = ["Ver consultas", "Informar sintomas", "Falar diretamente com um médico"];
 
 
 function listaDinamica(ListaComandos) {
@@ -33,7 +33,6 @@ function listaDinamica(ListaComandos) {
     }
     return containerDiv; 
 }
-
 
 const linha1 = listaDinamica(button1);
 areaBotoes.appendChild(linha1);
