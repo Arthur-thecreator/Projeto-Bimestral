@@ -147,3 +147,50 @@ body {
         min-height: 250px;
     }
 }
+
+
+
+#doencaPaciente {
+    background-color: #f7fbfd; 
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 25px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); 
+    display: none; 
+    opacity: 0; 
+    transform: translateY(20px); 
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+#doencaPaciente.active { 
+    display: block; 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+
+#doencaPaciente h3 { 
+    font-size: 1.3em;
+    color: #1a4a72;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #e0f0f5; 
+    padding-bottom: 8px;
+}
+
+.dadosMedicos {
+    background-color: #ffffff; 
+    padding: 12px 18px;
+    margin-bottom: 10px; 
+    border-radius: 8px;
+    border: 1px solid #e8f0f3; 
+    font-size: 0.95em;
+    color: #555;
+    display: flex; 
+    align-items: center;
+}
+
+.dadosMedicos strong { 
+    color: #007bff; 
+    margin-right: 8px;
+    font-weight: 600;
+}
+
