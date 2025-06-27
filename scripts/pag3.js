@@ -5,15 +5,37 @@ areaImagem.id = "areaImagem";
 
 const areaInfoPaciente = document.createElement("div");
 
-areaInfoPaciente.id = "areaInfoPaciente"; 
+areaInfoPaciente.id = "areaInfoPaciente";
+
+const doencaPaciente = document.createElement("section")
+doencaPaciente.id = "doencaPaciente"
+
+const sintomas = document.createElement("p")
+sintomas.innerText = "Tosse, espirros, dor de cabeça"
+sintomas.className = "dadosMedicos"
+
+const alergiasRemedios = document.createElement("p")
+alergiasRemedios.innerText = "Dipirona, polaramine"
+alergiasRemedios.className = "dadosMedicos"
+
+const remediosAnteriores = document.createElement("p")
+remediosAnteriores.innerText = "Flugoral, Tylenol"
+remediosAnteriores.className = "dadosMedicos"
+
+const historico = document.createElement("textarea");
+historico.placeholder = "Histórico médico relevante"; 
+historico.className = "dadosMedicos";
+
 
 const nome = document.createElement("textarea");
 nome.placeholder = "Nome completo"; 
 nome.className = "dadosPaciente";
 
-const historico = document.createElement("textarea");
-historico.placeholder = "Histórico médico relevante"; 
-historico.className = "dadosPaciente";
+
+const altura = document.createElement("textarea");
+altura.placeholder = "Altura (ex: 1,70m)"; 
+peso.className = "dadosPaciente";
+
 
 const peso = document.createElement("textarea");
 peso.placeholder = "Peso (ex: 70 kg)"; 
